@@ -45,21 +45,16 @@ $(function () {
 		}
 	});
 	$(".konami").hide();
-	function easeHeader(color) {
+  	var colorCycle = ["red", "green", "blue"];
+  	var colorIndex = 0;
+	function easeHeader() {
+      	if(colorIndex + 1 >= colorCycle.length)
+          colorIndex = 0;
 		header.animate({
-			color: color
-		}, { duration: delay, complete: easeHeaderRed });
+			color: colorCycle[colorIndex++]
+		}, { duration: delay, complete: easeHeader });
 	}
-	function easeHeaderRed() {
-		easeHeader("red");
-	}
-	function easeHeaderGreen() {
-		easeHeader("green");
-	}
-	function easeHeaderBlue() {
-		easeHeader("blue");
-	}
-	easeHeaderRed();
+	easeHeader();
 	$("#tabs").tabs();
 	$("#click").click(function () {
 		$("#click p").slideToggle();
