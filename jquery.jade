@@ -1,0 +1,48 @@
+doctype html
+html
+	head
+		include includes/head.jade
+		title Tom's JQuery Website
+	body
+		header
+			h1 Tom's JQuery Website
+		include includes/header.jade
+		article
+			div
+				pre.
+				p picks some elements based a CSS-style selector.
+			#tabs
+				ul
+					li
+						a(href='#events') Events        
+					li
+						a(href='#animations') Animations
+				#events
+					h2 Events
+					#click
+						pre.
+						p runs a function when the element is clicked.
+					#dblclick
+						pre.
+						p runs a function when the element is double clicked.
+					#hover
+						pre.
+						p runs a function when the element is hovered over.
+					#keydown
+					#mousedown
+						pre.
+						p runs a function when a mouse button is pressed over the element
+					#mouseup
+						pre.
+						p runs a function when a mouse button is released over the element
+				#animations
+					h2 Animations
+					#hide
+						pre.
+						p hides an element.
+					#animate
+						pre.
+						p allows you to animate an element&apos;s CSS properties.
+					#slide
+						pre.
+						p allows you to slide elements in and out.

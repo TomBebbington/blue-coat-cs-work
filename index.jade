@@ -1,0 +1,24 @@
+- var title = "Home";
+doctype html
+html
+	head
+		include includes/head.jade
+		title #{title} - Tom's JQuery Website
+	body
+		header
+			h1 #{title} - Tom's JQuery Website
+		include includes/header.jade
+		article
+			p This is my website for the Summer Work at Blue Coat for Computer Science. I have used Javascript to:
+				ul
+					li Animate the title's colour using JQuery, by using the <pre><code>$.animate</code></pre> function, and make it continuous by using a recursive function.
+					li Animate the JQuery overview page with examples of the JQuery functions I listed.
+					li Make a dinosaur run across the page when a viewer enters the konami code, which is:<br><em>Up Up Down Down Left Right Left Right B A</em>
+			p with the following Javascript features:
+				ul
+					li <b>Variables</b>, such as <pre><code>var x = 12; // global scope<br>const x = 12; // global scope constant<br>let x = 12 // block scope</code></pre>, these let you sustain values all through a function scope that you can change.
+					li <b>Conditionals</b>, such as <pre><code>if(x < 12) console.log(x)</code></pre>, these let you run code only if a value evaluates to a true value. I used this for the Konami code functionality to check that the array values are equal.
+					li <b>Functions</b>, such as <pre><code>function(x) return x + 2</code></pre> and (new arrow syntax) <pre><code>(x) => x + 2</code></pre>, these let you run bits of code with values called arguments. These arguments can have default values in newer Javascript. I used these in the callbacks I passed to JQuery.
+					li <b>Objects</b>, such as <pre><code>{ x: 20, y: 30 }</code></pre>, these let you associate multiple named values woth a single value. I used these to configure the JQuery animations.
+					li <b>Arrays</b>, such as <pre><code>[ 20, 12 ]</code></pre>, these let you associate multiple values with a single value.
+					li <b>TypedArrays</b>, such as <pre><code>new Int32Array([1, 3, 5, 7])</code></pre>, these let you store multiple values of a single type in a single array value. These are way faster than regular arrays because of their typed access but they are slightly more compilicated to work with. I used these to store the keyboard buttons pressed and the desired buttons for the Konami code functionality.
