@@ -25,6 +25,7 @@ $(function () {
 				var self = this;
 				var delay = 500 + Math.random() * 1000;
 				var offset = Math.random() * window.innerHeight - width / 2;
+              	self.style.zIndex = offset;
 				function to(x) {
 					$(self).animate({
 						left: x,
