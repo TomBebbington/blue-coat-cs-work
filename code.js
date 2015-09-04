@@ -1,6 +1,5 @@
 'use strict';
 hljs.initHighlightingOnLoad();
-console.log($);
 $(function () {
 	'use strict';
 	function equal(a, b) {
