@@ -10,7 +10,7 @@ $(function () {
 		}
 		return true;
 	}
-	var header = $("header h1");
+	var header = $("h1");
 	var delay = 1000;
 	var keys = new Uint8Array(11);
 	var desiredKeys = new Uint8Array([65, 66, 39, 37, 39, 37, 40, 40, 38, 38]);
