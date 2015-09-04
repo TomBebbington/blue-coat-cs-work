@@ -12,7 +12,6 @@ $(function () {
 		return true;
 	}
 	var header = $("h1");
-  console.log(header);
 	var delay = 1000;
 	var keys = new Uint8Array(11);
 	var desiredKeys = new Uint8Array([65, 66, 39, 37, 39, 37, 40, 40, 38, 38]);
