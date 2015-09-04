@@ -67,4 +67,5 @@ body, html {
 	position: absolute;
 	left: 10px;
 	top: 30%;
+  	z-index: 1000000;
 }
