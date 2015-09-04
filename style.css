@@ -63,6 +63,10 @@ body, html {
 	text-shadow: 0 0 8px rgba(68, 70, 102, 1);
 }
 
+#tabs {
+  z-index: -20;
+}
+
 .konami {
 	position: absolute;
 	left: 10px;
